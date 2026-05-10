@@ -13,7 +13,8 @@
         "title": "Minimax Strikes Back",
         "type": "inproceedings",
         "url": "https://dl.acm.org/doi/10.5555/3545946.3598861",
-        "urldate": "2026-05-10"
+        "urldate": "2026-05-10",
+        "year": "2023"
     },
     "coulom_efficient_2007": {
         "abstract": "A Monte-Carlo evaluation consists in estimating a position by averaging the outcome of several random continuations. The method can serve as an evaluation function at the leaves of a min-max tree. This paper presents a new framework to combine tree search with Monte-Carlo evaluation, that does not separate between a min-max phase and a Monte-Carlo phase. Instead of backing-up the min-max value close to the root, and the average value at some depth, a more general backup operator is defined that progressively changes from averaging to min-max as the number of simulations grows. This approach provides a fine-grained control of the tree growth, at the level of individual simulations, and allows efficient selectivity. The resulting algorithm was implemented in a 9\u00d79 Go-playing program, Crazy Stone, that won the 10th {KGS} computer-Go tournament.",
@@ -30,7 +31,8 @@
         "pages": "72--83",
         "publisher": "Springer",
         "title": "Efficient Selectivity and Backup Operators in Monte-Carlo Tree Search",
-        "type": "inproceedings"
+        "type": "inproceedings",
+        "year": "2007"
     },
     "coulom_efficient_2007-1": {
         "abstract": "A Monte-Carlo evaluation consists in estimating a position by averaging the outcome of several random continuations. The method can serve as an evaluation function at the leaves of a min-max tree. This paper presents a new framework to combine tree search with Monte-Carlo evaluation, that does not separate between a min-max phase and a Monte-Carlo phase. Instead of backing-up the min-max value close to the root, and the average value at some depth, a more general backup operator is defined that progressively changes from averaging to min-max as the number of simulations grows. This approach provides a fine-grained control of the tree growth, at the level of individual simulations, and allows efficient selectivity. The resulting algorithm was implemented in a 9\u00d79 Go-playing program, Crazy Stone, that won the 10th {KGS} computer-Go tournament.",
@@ -47,7 +49,8 @@
         "pages": "72--83",
         "publisher": "Springer",
         "title": "Efficient Selectivity and Backup Operators in Monte-Carlo Tree Search",
-        "type": "inproceedings"
+        "type": "inproceedings",
+        "year": "2007"
     },
     "goodman_multitree_2022": {
         "abstract": "We introduce {MultiTree} Monte Carlo Tree Search ({MT}-{MCTS}), in which a tree is constructed independently for each player. This permits deeper search for the acting agent\u2019s own move, at the cost of a poorer opponent model and the loss of conditioning a move on the specific action of another player.We test {MT}-{MCTS} in eleven different tabletop board and card games, with varying numbers of players. The main benefit occurs in simultaneous-move games, where independent trees better model the information structure. We find that in other games {MT}-{MCTS} can outperform vanilla {MCTS}, which incorporates all players in a single tree, but that this advantage usually decreases as the computational budget increases, and the cost of poor opponent modelling outweighs the gain from deeper search.",
@@ -64,7 +67,8 @@
         "title": "{MultiTree} {MCTS} in Tabletop Games",
         "type": "inproceedings",
         "url": "https://ieeexplore.ieee.org/document/9893605",
-        "urldate": "2026-05-10"
+        "urldate": "2026-05-10",
+        "year": "2022"
     },
     "huang_mohex_2014": {
         "abstract": "In recent years the Monte Carlo tree search revolution has spread from computer Go to many areas, including computer Hex. {MCTS}-based Hex players now outperform traditional knowledge-based alpha-beta search players, and the reigning Computer Olympiad Hex gold medallist is the {MCTS} player {MoHex}. In this paper we show how to strengthen {MoHex}, and observe that\u2014as in computer Go\u2014using learned patterns in priors and replacing a hand-crafted simulation policy by a softmax policy that uses learned patterns significantly increases playing strength. The result is {MoHex} 2.0, about 250 Elo points stronger than {MoHex} on the 11\\$\\${\\textbackslash}times \\$\\$\u00d711 board, and 300 Elo points stronger on the 13\\$\\${\\textbackslash}times \\$\\$\u00d713 board.",
@@ -81,7 +85,8 @@
         "publisher": "Springer International Publishing",
         "shorttitle": "{MoHex} 2.0",
         "title": "{MoHex} 2.0: A Pattern-Based {MCTS} Hex Player",
-        "type": "inproceedings"
+        "type": "inproceedings",
+        "year": "2016"
     },
     "nair_improving_2025": {
         "abstract": "Alpha-Beta Pruning is a critical optimization technique in chess engines, helping them make fast, accurate decisions by reducing unnecessary calculations. This paper focuses on enhancing its efficiency to improve search depth and speed with-out compromising accuracy. This investigation examines current challenges in traditional implementations, such as inefficiencies in move ordering and redundant computations, especially in complex game scenarios. The proposed innovative strategies include dynamic move ordering powered by machine learning and improved transposition table management. These techniques streamline the pruning process, ensuring the most promising moves are evaluated first and avoiding repetitive calculations. Adaptive depth control is explored to make the algorithm more responsive to the game's context. Extensive testing on various chess positions demonstrated clear improvements in pruning efficiency. The enhanced algorithm can analyze deeper game trees with reduced computational costs, making chess engines faster and smarter. These advancements not only benefit chess engines but also have broader implications for Artificial Intelligence ({AI}) systems requiring efficient decision-making in dynamic environments. Improved Alpha-Beta Pruning methods make chess engines smarter and faster, allowing them to analyze deeper strategies while using less computing power.",
@@ -96,7 +101,8 @@
         "title": "Improving Alpha-Beta Pruning Efficiency in Chess Engines",
         "type": "inproceedings",
         "url": "https://ieeexplore.ieee.org/document/11004942",
-        "urldate": "2026-05-10"
+        "urldate": "2026-05-10",
+        "year": "2025"
     },
     "parmar_hybrid_2025": {
         "abstract": "In this research, we designed a novel chess engine that combines Monte Carlo Tree Search ({MCTS}) with the traditional Minimax algorithm to enhance decision-making performance and strategic depth. Unlike normative engines that solely rely on static evaluation functions, our model is a Reinforcement Learning from Human Feedback ({RLHF})-trained, constantly evolving performance model that draws upon advanced systems such as Stockfish and {AlphaZero} to clarify its position [7], [8], [9]. Using the {CCRL} V3 dataset from Lc0 Leela Chess, we established a robust training base composed of expert-level play. A major challenge was ensuring that Minimax remained as exhaustive and tactically precise as possible, while balancing the inherently scalable but sometimes imprecise nature of {MCTS} [5], [6], [10]. To address this, the engine dynamically chooses between the two methods based on real-time board complexity\u2014an adaptive strategy inspired by prior hybrid approaches [1], [5], [6]. This dynamic mechanism not only eliminates shallow or ineffective searches and improves computational efficiency, but also ensures rigorous treatment of legal move generation and check/checkmate detection, adhering to best practices in {AI} game engines [12]. Experimental results show that our hybrid model performs better in gameplay scenarios, achieving high prediction accuracy with reduced computational overhead. In other words, the system could be further scaled using parallel self-play and network-based training simulations [8]. Overall, our research highlights the viability of dynamic search algorithms in combination with {RLHF} training for educational applications in board games, potentially paving the way for more human-like and adaptive {AI}.",
@@ -110,7 +116,8 @@
         "title": "A Hybrid Minimax-{MCTS} Chess Engine Enhanced by {RLHF} Using Stockfish and {AlphaZero}",
         "type": "inproceedings",
         "url": "https://ieeexplore.ieee.org/document/11280596",
-        "urldate": "2026-05-10"
+        "urldate": "2026-05-10",
+        "year": "2025"
     },
     "shoham_parallel_2002": {
         "abstract": "We describe a novel parallel randomized search algorithm for two-player games. The algorithm is a randomized version of Korf and Chickering's best-first search. Randomization both fixes a defect in the original algorithm and introduces significant parallelism. An experimental evaluation demonstrates that the algorithm is efficient (in terms of the number of search-tree vertices that it visits) and highly parallel. On incremental random game trees the algorithm outperforms Alpha-Beta, and speeds up by up to a factor of 18 (using 35 processors). In comparison, Jamboree [{ICCA} J. 18 (1) (1995) 3-19] speeds up by only a factor of 6. The algorithm outperforms Alpha-Beta in the game of Othello. We have also evaluated the algorithm in a Chess-playing program using the board-evaluation code from an existing Alpha-Beta-based program (Crafty). On a single processor our program is slower than Crafty by about a factor of 7, but with multiple processors it outperforms it: with 64 processors our program is always faster, usually by a factor of 5, sometimes much more.",
@@ -126,7 +133,8 @@
         "type": "article",
         "url": "https://dl.acm.org/doi/10.1016/S0004-3702%2802%2900195-9",
         "urldate": "2026-05-10",
-        "volume": "137"
+        "volume": "137",
+        "year": "2002"
     },
     "silver_mastering_2016": {
         "abstract": "The game of Go has long been viewed as the most challenging of classic games for artificial intelligence owing to its enormous search space and the difficulty of evaluating board positions and moves. Here we introduce a new approach to computer Go that uses \u2018value networks\u2019 to evaluate board positions and \u2018policy networks\u2019 to select moves. These deep neural networks are trained by a novel combination of supervised learning from human expert games, and reinforcement learning from games of self-play. Without any lookahead search, the neural networks play Go at the level of state-of-the-art Monte Carlo tree search programs that simulate thousands of random games of self-play. We also introduce a new search algorithm that combines Monte Carlo simulation with value and policy networks. Using this search algorithm, our program {AlphaGo} achieved a 99.8\\% winning rate against other Go programs, and defeated the human European Go champion by 5 games to 0. This is the first time that a computer program has defeated a human professional player in the full-sized game of Go, a feat previously thought to be at least a decade away.",
@@ -146,7 +154,8 @@
         "type": "article",
         "url": "https://www.nature.com/articles/nature16961",
         "urldate": "2026-05-07",
-        "volume": "529"
+        "volume": "529",
+        "year": "2016"
     },
     "silver_mastering_2017": {
         "abstract": "A long-standing goal of artificial intelligence is an algorithm that learns, tabula rasa, superhuman proficiency in challenging domains. Recently, {AlphaGo} became the first program to defeat a world champion in the game of Go. The tree search in {AlphaGo} evaluated positions and selected moves using deep neural networks. These neural networks were trained by supervised learning from human expert moves, and by reinforcement learning from self-play. Here we introduce an algorithm based solely on reinforcement learning, without human data, guidance or domain knowledge beyond game rules. {AlphaGo} becomes its own teacher: a neural network is trained to predict {AlphaGo}\u2019s own move selections and also the winner of {AlphaGo}\u2019s games. This neural network improves the strength of the tree search, resulting in higher quality move selection and stronger self-play in the next iteration. Starting tabula rasa, our new program {AlphaGo} Zero achieved superhuman performance, winning 100\u20130 against the previously published, champion-defeating {AlphaGo}.",
@@ -166,6 +175,7 @@
         "type": "article",
         "url": "https://www.nature.com/articles/nature24270",
         "urldate": "2026-05-10",
-        "volume": "550"
+        "volume": "550",
+        "year": "2017"
     }
 };
