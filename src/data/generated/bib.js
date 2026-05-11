@@ -23,24 +23,6 @@
         "date": "2007",
         "doi": "10.1007/978-3-540-75538-8_7",
         "editor": "van den Herik, H. Jaap and Ciancarini, Paolo and Donkers, H. H. L. M. (Jeroen)",
-        "file": "Full Text PDF:/Users/darronporter/Zotero/storage/4BCWV8MV/Coulom - 2007 - Efficient Selectivity and Backup Operators in Monte-Carlo Tree Search.pdf:application/pdf",
-        "isbn": "978-3-540-75538-8",
-        "keywords": "Black String, Good Move, Random Game, Random Simulation, Tree Search",
-        "langid": "english",
-        "location": "Berlin, Heidelberg",
-        "pages": "72--83",
-        "publisher": "Springer",
-        "title": "Efficient Selectivity and Backup Operators in Monte-Carlo Tree Search",
-        "type": "inproceedings",
-        "year": "2007"
-    },
-    "coulom_efficient_2007-1": {
-        "abstract": "A Monte-Carlo evaluation consists in estimating a position by averaging the outcome of several random continuations. The method can serve as an evaluation function at the leaves of a min-max tree. This paper presents a new framework to combine tree search with Monte-Carlo evaluation, that does not separate between a min-max phase and a Monte-Carlo phase. Instead of backing-up the min-max value close to the root, and the average value at some depth, a more general backup operator is defined that progressively changes from averaging to min-max as the number of simulations grows. This approach provides a fine-grained control of the tree growth, at the level of individual simulations, and allows efficient selectivity. The resulting algorithm was implemented in a 9\u00d79 Go-playing program, Crazy Stone, that won the 10th {KGS} computer-Go tournament.",
-        "author": "Coulom, R\u00e9mi",
-        "booktitle": "Computers and Games",
-        "date": "2007",
-        "doi": "10.1007/978-3-540-75538-8_7",
-        "editor": "van den Herik, H. Jaap and Ciancarini, Paolo and Donkers, H. H. L. M. (Jeroen)",
         "file": "Full Text PDF:/Users/darronporter/Zotero/storage/UN9FC6YB/Coulom - 2007 - Efficient Selectivity and Backup Operators in Monte-Carlo Tree Search.pdf:application/pdf",
         "isbn": "978-3-540-75538-8",
         "keywords": "Black String, Good Move, Random Game, Random Simulation, Tree Search",
@@ -86,7 +68,7 @@
         "shorttitle": "{MoHex} 2.0",
         "title": "{MoHex} 2.0: A Pattern-Based {MCTS} Hex Player",
         "type": "inproceedings",
-        "year": "2016"
+        "year": "2014"
     },
     "nair_improving_2025": {
         "abstract": "Alpha-Beta Pruning is a critical optimization technique in chess engines, helping them make fast, accurate decisions by reducing unnecessary calculations. This paper focuses on enhancing its efficiency to improve search depth and speed with-out compromising accuracy. This investigation examines current challenges in traditional implementations, such as inefficiencies in move ordering and redundant computations, especially in complex game scenarios. The proposed innovative strategies include dynamic move ordering powered by machine learning and improved transposition table management. These techniques streamline the pruning process, ensuring the most promising moves are evaluated first and avoiding repetitive calculations. Adaptive depth control is explored to make the algorithm more responsive to the game's context. Extensive testing on various chess positions demonstrated clear improvements in pruning efficiency. The enhanced algorithm can analyze deeper game trees with reduced computational costs, making chess engines faster and smarter. These advancements not only benefit chess engines but also have broader implications for Artificial Intelligence ({AI}) systems requiring efficient decision-making in dynamic environments. Improved Alpha-Beta Pruning methods make chess engines smarter and faster, allowing them to analyze deeper strategies while using less computing power.",
@@ -177,5 +159,22 @@
         "urldate": "2026-05-10",
         "volume": "550",
         "year": "2017"
+    },
+    "suancha_implementation_2024": {
+        "abstract": "Checkers is a strategy game for two players on an 8{\\textbackslash}times 8 square board. This document outlines the creation of a checkers game, employing alpha-beta pruning as a search algorithm and transposition tables to enable the game to learn from past play sessions. The utilization of these techniques enhances the game\u2019s strategic decision-making process, contributing to an improved overall gaming experience. The execution time of the machine\u2019s moves in games with and without using transposition tables showed that it is possible to make some games faster by using the data stored in the tables. However, under some conditions this can be more time-consuming than the search performed by the alpha-beta algorithm. A user survey resulted in positive outcomes, indicating a favorable user experience when using the implemented game with the transposition tables. Comparative analysis against other algorithms demonstrated the successful implementation of the approach. This research contributes to the field of game {AI} optimization by integrating alpha-beta pruning and transposition tables into a web-based checkers game. The implementation offers a balance between computational efficiency and user engagement in the web-based checkers game.",
+        "author": "Suancha, Cristian C. and Suarez, Marco J. and Besoain, Felipe A.",
+        "date": "2024",
+        "doi": "10.1109/ACCESS.2024.3381958",
+        "file": "Full Text PDF:/Users/darronporter/Zotero/storage/DQ78MHVE/Suancha et al. - 2024 - Implementation of Alpha-Beta Pruning and Transposition Tables on Checkers Game.pdf:application/pdf",
+        "issn": "2169-3536",
+        "journaltitle": "{IEEE} Access",
+        "keywords": "Algorithm design and theory, Artificial intelligence, Checkers, computer games, game algorithm, Games, Graphical user interfaces, Heuristic algorithms, Optimization, Surveys, user experience, User experience, Vegetation",
+        "pages": "46636--46645",
+        "title": "Implementation of Alpha-Beta Pruning and Transposition Tables on Checkers Game",
+        "type": "article",
+        "url": "https://ieeexplore.ieee.org/document/10479505",
+        "urldate": "2026-05-10",
+        "volume": "12",
+        "year": "2024"
     }
 };
